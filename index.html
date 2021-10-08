@@ -16,23 +16,37 @@
             </div>
             <div>
                 <h2>General Information</h2>
-                <form class="general-information">
-                    <label for="forename" class="forename">Forename</label>
-                    <input type="text" id="forename" name="forename">
-                    <label for="surname" class="surname">Surname</label>
-                    <input type="text" id="surname" name="surname">
-                    <label for="gender" class="gender">Gender</label>
-                    <select id="gender" name="gender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="nonbinary">Non-Binary</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <label for="age" class="age">Age</label>
-                    <input type="number" id="age" name="age" min="1" max="90">
-                    <label for="occupation" class="occupation">Occupation</label>
-                    <input type="text" id="occupation" name="occupation">
-                    <input type="button" id="random-button" value="Randomize General Information" onclick="randomizeGeneral(names, jobs)">
+                <form>
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="forename" class="forename">Forename</label>
+                            <input type="text" id="forename" name="forename">
+                        </div>
+                        <div class="form-group">
+                            <label for="surname" class="surname">Surname</label>
+                            <input type="text" id="surname" name="surname">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender" class="gender">Gender</label>
+                            <select id="gender" name="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="nonbinary">Non-Binary</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="age" class="age">Age</label>
+                            <input type="number" id="age" name="age" min="1" max="90">
+                        </div>
+                        <div class="form-group">
+                            <label for="occupation" class="occupation">Occupation</label>
+                            <input type="text" id="occupation" name="occupation">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" id="random-button" value="Randomize General Information" onclick="randomizeGeneral(names, jobs)">
+                        </div>
+                    </div>
                 </form>
             </div>
             <div>
@@ -44,12 +58,10 @@
             <div>
                 <h2>Personality and Backstory</h2>
             </div>
+            <div class="foot">
+                &copy by Pascal Peters 2021 | Background image by <a href="https://www.pexels.com/de-de/@eberhardgross" target="_blank">eberhard_grossgasteiger</a>
+            </div>
         </div>
     <script src="js/script.js"></script>
     </body>
-    <footer>
-        <div>
-            &copy by Pascal Peters 2021 | Background image by <a href="https://www.pexels.com/de-de/@eberhardgross" target="_blank">eberhard_grossgasteiger</a>
-        </div>
-    </footer>
 </html>

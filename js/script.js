@@ -37,8 +37,10 @@ function randomizeGeneral(array, array2) {
     random_age = parseInt(Math.random() * (90 - 1) + 1);
     char_age.value = random_age;
 
-    if (char_age.value <= 18) {
+    if (char_age.value <= 18 && char_age.value > 7) {
         char_job.value = "Student";
+    } else if (char_age.value <= 7) {
+        char_job.value = "Kindergardener";
     } else if (char_age.value > 18 && char_age.value <= 22) {
         char_job.value = "College student";
     } else if (char_age.value > 64){
