@@ -49,6 +49,11 @@ body {
     color: rgb(161, 59, 59);
 }
 
+.foot a:visited {
+    color: white;
+    text-decoration: none;
+}
+
 #forename {
     grid-area: forename;
     width: 10em;
