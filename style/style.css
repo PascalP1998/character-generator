@@ -74,7 +74,7 @@ body {
 
 #gender {
     grid-area: gender;
-    width: 8em;
+    width: 10em;
     padding: 0.5em;
     border: white 2px solid;
     background-color: rgba(27, 27, 27, 0.623);
@@ -83,7 +83,7 @@ body {
 
 #age {
     grid-area: age;
-    width: 8em;
+    width: 10em;
     padding: 0.5em;
     border: white 2px solid;
     background-color: rgba(27, 27, 27, 0.623);
