@@ -17,6 +17,7 @@ function randomizeAppereance() {
     let char_hairlength = document.getElementById("hairlength");
     let char_haircolor = document.getElementById("haircolor");
     let char_clothes = document.getElementById("clothes");
+    let char_eyecolor = document.getElementById("eyecolor");
 
 
     // HEIGHT RANDOMIZER
@@ -73,6 +74,9 @@ function randomizeAppereance() {
 
     //HAIRCOLOR RANDOMIZER
     char_haircolor.value = getRandomColor();
+
+    //HAIRCOLOR RANDOMIZER
+    char_eyecolor.value = getRandomColor();
 
     //CLOTHING RANDOMIZER
     let clothes = Math.floor(Math.random() * 12) + 1;
