@@ -49,13 +49,12 @@ body {
     color: rgb(161, 59, 59);
 }
 
-.foot a:visited {
+/*.foot a:visited {
     color: white;
     text-decoration: none;
-}
+}*/
 
-#forename {
-    grid-area: forename;
+input[type="text"] {
     width: 10em;
     padding: 0.5em;
     border: white 2px solid;
@@ -63,8 +62,7 @@ body {
     color: white;
 }
 
-#surname {
-    grid-area: surname;
+select {
     width: 10em;
     padding: 0.5em;
     border: white 2px solid;
@@ -72,8 +70,7 @@ body {
     color: white;
 }
 
-#gender {
-    grid-area: gender;
+input[type="number"] {
     width: 10em;
     padding: 0.5em;
     border: white 2px solid;
@@ -81,25 +78,7 @@ body {
     color: white;
 }
 
-#age {
-    grid-area: age;
-    width: 10em;
-    padding: 0.5em;
-    border: white 2px solid;
-    background-color: rgba(27, 27, 27, 0.623);
-    color: white;
-}
-
-#occupation {
-    grid-area: occupation;
-    width: 10em;
-    padding: 0.5em;
-    border: white 2px solid;
-    background-color: rgba(27, 27, 27, 0.623);
-    color: white;
-}
-
-#random-button {
+input[type="button"] {
     border: white 2px solid;
     background: rgb(31, 31, 31);
     width: 20em;
@@ -108,23 +87,16 @@ body {
     grid-area: random;
 }
 
-#random-button:hover {
+input[type="button"]:hover {
     cursor: pointer;
     border-color:rgb(161, 59, 59);
     color:rgb(161, 59, 59)
 }
 
-/*.general-information {
-    display: grid;
-    --auto-grid-min-size: 16rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-template-areas: 
-        "forename-label surname-label ."
-        "forename surname random"
-        "gender-label age-label occupation-label"
-        "gender age occupation";
-}*/
+input[type="color"] {
+    border: white 1px solid;
+    padding: 0.2em;
+}
 
 .form-container {
     margin: 2rem 0;

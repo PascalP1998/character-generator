@@ -14,54 +14,99 @@
                 <h1>Character Generator</h1>
                 <p>Inspired by <i>Dungeons and Dragons</i>: Use this character generator to create your own character for fictional stories, roleplaying games, etc.</p>
             </div>
-            <div>
+            <form>
                 <h2>General Information</h2>
-                <form>
-                    <div class="form-container">
-                        <div class="form-group">
-                            <label for="forename" class="forename">Forename</label>
-                            <input type="text" id="forename" name="forename">
-                        </div>
-                        <div class="form-group">
-                            <label for="surname" class="surname">Surname</label>
-                            <input type="text" id="surname" name="surname">
-                        </div>
-                        <div class="form-group">
-                            <label for="gender" class="gender">Gender</label>
-                            <select id="gender" name="gender">
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="nonbinary">Non-Binary</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="age" class="age">Age</label>
-                            <input type="number" id="age" name="age" min="1" max="90">
-                        </div>
-                        <div class="form-group">
-                            <label for="occupation" class="occupation">Occupation</label>
-                            <input type="text" id="occupation" name="occupation">
-                        </div>
-                        <div class="form-group">
-                            <input type="button" id="random-button" value="Randomize General Information" onclick="randomizeGeneral(names, jobs)">
-                        </div>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="forename">Forename</label>
+                        <input type="text" id="forename" name="forename">
                     </div>
-                </form>
-            </div>
-            <div>
+                    <div class="form-group">
+                        <label for="surname">Surname</label>
+                        <input type="text" id="surname" name="surname">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="nonbinary">Non-Binary</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" min="1" max="90">
+                    </div>
+                    <div class="form-group">
+                        <label for="occupation">Occupation</label>
+                        <input type="text" id="occupation" name="occupation">
+                    </div>
+                    <div class="form-group">
+                        <input type="button" id="random-button" value="Randomize General Information" onclick="randomizeGeneral(names, jobs)">
+                    </div>
+                </div>
                 <h2>Appereance and Equipment</h2>
-            </div>
-            <div>
+                <h3>Appereance</h3>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="height">Height [cm]</label>
+                        <input type="number" id="height" name="height" max="300" min="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">Weight [kg]</label>
+                        <input type="number" id="weight" name="weight" max="300" min="10">
+                    </div>
+                    <div class="form-group">
+                        <label for="muscles">Muscular</label>
+                        <select id="muscles" name="muscles">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="hairlength">Hair length</label>
+                        <select id="hairlength" name="hairlength">
+                            <option value="bald">Bald</option>
+                            <option value="short">Short</option>
+                            <option value="medium">Medium</option>
+                            <option value="long">Long</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="haircolor">Hair color</label>
+                        <input type="color" id="haircolor" name="haircolor">
+                    </div>
+                    <div class="form-group">
+                        <label for="clothes">Clothing Style</label>
+                        <select id="clothes" name="clothes" style="width: 13em">
+                            <option value="medieval_commoner">Medieval Commoner</option>
+                            <option value="medieval_knight">Medieval Knight</option>
+                            <option value="medieval_noble">Medieval Noble</option>
+                            <option value="steampunk">Steampunk Fashion</option>
+                            <option value="goth">Goth</option>
+                            <option value="punk">Punker</option>
+                            <option value="casual">Casual Wear</option>
+                            <option value="business">Business Wear</option>
+                            <option value="grunge">Grunge</option>
+                            <option value="elegant">Elegant</option>
+                            <option value="native">Native Style</option>
+                            <option value="exotic">Exotic clothes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="button" id="random-button" value="Randomize Apperance" onclick="randomizeAppereance(names, jobs)">
+                    </div>
+                </div>
                 <h2>Abilities</h2>
-            </div>
-            <div>
                 <h2>Personality and Backstory</h2>
-            </div>
+            </form>
             <div class="foot">
                 &copy by Pascal Peters 2021 | Background image by <a href="https://www.pexels.com/de-de/@eberhardgross" target="_blank">eberhard_grossgasteiger</a>
             </div>
         </div>
-    <script src="js/script.js"></script>
+    <script src="js/randomizeAppereance.js"></script>
+    <script src="js/randomizeGeneral.js"></script>
+    <script src="js/randomizeEquipment.js"></script>
     </body>
 </html>

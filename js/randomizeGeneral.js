@@ -7,7 +7,7 @@ names = {
     "neutral_forenames": ["Morgan", "Finley", "Riley", "Jessie", "Jaime", "Kendall", "Skyler", "Frankie", "Quinn", "Harley", "Peyton", "Robbie", "Sidney", "Tommie", "Ashley", "Carter", "Adrian", "Clarke", "Jackie", "Logan", "Mickey", "Nicky", "Parker", "Mick", "Tyler", "Arrow", "Darby", "Haskell", "Arden", "Rebel", "Valen", "Trinity", "Ziv", "Xen", "Zane", "Wyatt", "Vesper", "Tatum", "Sparrow", "Stirling", "Sacha", "Roux", "Rio", "Reef", "Owen", "Orion", "Murphy", "Lux", "Sloan", "River", "Haven", "Karter", "Rowan", "Taylor", "Spencer", "Ellis", "Emery", "Morgan", "Remington", "Phoenix", "Shawn", "Shannon", "Jamie", "Leslie", "Alexis", "Ari", "Jordan", "Terry", "Kelly", "Willie", "Jules", "Austen", "Kim", "Corey", "Oakley"]
 };
 
-jobs = {"occupations": ["Accountant", "Actor/Actress", "Architect", "Astronomer", "Author", "Baker", "Bricklayer", "Bus driver", "Butcher", "Carpenter", "Chef", "Cook", "Cleaner", "Dentist", "Designer", "Doctor", "Dustman", "Electrician", "Engineer", "Factory worker", "Farmer", "Firefighter", "Fisherman", "Florist", "Gardener", "Hairdresser", "Journalist", "Judge", "Lawyer", "Lecturer", "Librarian", "Lifeguard", "Mechanic", "Model", "Newsreader", "Nurse", "Optician", "Painter", "Pharmacist", "Photographer", "Pilot", "Plumber", "Politician", "Police", "Postman", "Real estate agent", "Receptionist", "Scientist", "Secretary", "Shop assistant", "Soldier", "Tailor", "Taxi driver", "Teacher", "Translator", "Traffic warden", "Travel agent", "Veterinary doctor", "Waiter/Waitress", "Window cleaner", "Software engineer"]
+jobs = {"occupations": ["Accountant", "Actor/Actress", "Architect", "Astronomer", "Author", "Baker", "Bricklayer", "Bus driver", "Butcher", "Carpenter", "Chef", "Cook", "Cleaner", "Dentist", "Designer", "Doctor", "Dustman", "Electrician", "Engineer", "Factory worker", "Farmer", "Firefighter", "Fisherman", "Florist", "Gardener", "Hairdresser", "Journalist", "Judge", "Lawyer", "Lecturer", "Librarian", "Lifeguard", "Mechanic", "Model", "Newsreader", "Nurse", "Optician", "Painter", "Pharmacist", "Photographer", "Pilot", "Plumber", "Politician", "Police", "Postman", "Real estate agent", "Receptionist", "Scientist", "Secretary", "Shop assistant", "Soldier", "Tailor", "Taxi driver", "Teacher", "Translator", "Traffic warden", "Travel agent", "Veterinary doctor", "Waiter/Waitress", "Window cleaner", "Software engineer", "None", "King", "Guard"]
 };
 
 // SCRIPT
@@ -18,6 +18,17 @@ function randomizeGeneral(array, array2) {
     let char_surname = document.getElementById("surname");
     let char_age = document.getElementById("age");
     let char_job = document.getElementById("occupation");
+
+
+    let gender = parseInt(Math.random() * (3 - 0) + 0);
+    if (gender == 1) {
+        char_gender.value = "male";
+    } else if (gender == 2) {
+        char_gender.value = "female";
+    } else if (gender == 3) {
+        char_gender.value = "nonbinary"
+    }
+
     if (char_gender.value == "male") {
         let name = array["male_forenames"][Math.floor(Math.random()*array["male_forenames"].length)];
         console.log(name);
