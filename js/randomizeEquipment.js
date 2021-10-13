@@ -2,7 +2,7 @@
 
 items = {"items": [
     "potion", "family ornament", "holy symbol", "bible", "favourite book", "wallet", "bag of gold", "shard", "piece of paper", "notes", "scrolls", "journal", "hunting trophy", "mobile phone", "set of playing cards",
-    "laptop", "pencil", "feather and ink", "charger", "keys", "screws", "handkerchief", "business card", "photo with SO", "family photo", "necklace", "ring", "mobile console"
+    "laptop", "pencil", "feather and ink", "charger", "keys", "screws", "handkerchief", "business card", "photo with SO", "family photo", "necklace", "ring", "mobile console", "lunchbox"
 ]
 };
 
@@ -59,8 +59,14 @@ function randomizeEquipment(array) {
 
     // INVENTORY RANDOMIZER
 
-    let amount = Math.floor(Math.random() * 5) + 1;
+    let amount = Math.floor(Math.random() * 4) + 1;
     let picked = [];
+
+    let chance = Math.floor(Math.random() * 100) + 1;
+    if (chance <= 2) {
+        picked.push("chocolate fish");
+    };
+
     for (let i=0; i < amount + 1; i++) {
         let item = array["items"][Math.floor(Math.random()*array["items"].length)];
         if (!picked.includes(item)) {
