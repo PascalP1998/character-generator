@@ -11,3 +11,16 @@ Need a backstory and/or abilities for a fictional character? Use this generator!
     * Age
     * Gender
     * Occupation
+* Randomize Appereance and Equipment of Character or enter your own:
+    * Appereance
+        * Height
+        * Weight
+        * Muscular
+        * Hair length
+        * Hair color
+        * Eye color
+        * Clothing Style
+    * Equipment
+        * Weapon
+        * Inventory
+        * Armor
